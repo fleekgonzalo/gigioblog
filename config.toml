@@ -1,0 +1,94 @@
+baseURL = "http://gigio.blogtest"
+
+defaultContentLanguage = "en"
+languageCode = "en"
+
+title = "gigio.blogtest"
+
+theme = "LoveIt"
+
+enableRobotsTXT = true
+enableEmoji = true
+
+[params]
+  version = "0.2.X"
+  keywords = ["Blog", "Programming", "Software", "Engineering"]
+  defaultTheme = "auto"
+  dateFormat = "2006-01-02"
+
+  [params.home.profile]
+    enable = true
+    gravatarEmail = "gmorganzanetti@hotmail.com"
+    social = true
+
+  [params.social]
+    GitHub = "GigioMZ"
+    Linkedin = "guillermo-morgan-zanetti"
+    Stackoverflow = "3994693/tomas-farias"
+
+  [params.search]
+    enable = true
+    type = "algolia"
+    contentLength = 4000
+    placeholder = ""
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+    absoluteURL = false
+
+  [params.page]
+    [params.page.toc]
+      auto = false
+
+    [params.page.comment]
+      enable = true
+
+      [params.page.comment.utterances]
+        enable = true
+        repo = "tomasfarias/hugo-blog"
+        issueTerm = "pathname"
+        label = "comment"
+        lightTheme = "github-light"
+        darkTheme = "github-dark"
+
+    [params.page.share]
+      enable = true
+      Twitter = true
+      Facebook = true
+      Linkedin = true
+      HackerNews = true
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    pre = ""
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    pre = ""
+    post = ""
+    name = "About"
+    url = "/about/"
+    title = ""
+    weight = 3
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+[author]
+  name = "Guillermo Morgan Zanetti"
+  email = "gmorganzanetti@gmail.com"
+  link = "https://github.com/GigioMZ"
